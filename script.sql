@@ -2,8 +2,6 @@ create database transporter GO;
 use transporter GO;
 -- Drop table
 
--- DROP TABLE transporter.dbo.rol GO
-
 CREATE TABLE transporter.dbo.rol (
 	id int IDENTITY(1,1) NOT NULL,
 	descripcion nvarchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
@@ -21,20 +19,6 @@ CREATE TABLE transporter.dbo.sucursal (
 	id int IDENTITY(1,1) NOT NULL,
 	nombreSucursal nvarchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	CONSTRAINT PK__sucursal__3213E83FFA4F1074 PRIMARY KEY (id)
-) GO;
-
-
--- transporter.dbo.transportista definition
-
--- Drop table
-
--- DROP TABLE transporter.dbo.transportista GO
-
-CREATE TABLE transporter.dbo.transportista (
-	id int IDENTITY(1,1) NOT NULL,
-	nombre nvarchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	tarifa money NULL,
-	CONSTRAINT PK__transpor__3213E83F2B7154F9 PRIMARY KEY (id)
 ) GO;
 
 
